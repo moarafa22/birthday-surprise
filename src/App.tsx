@@ -206,7 +206,7 @@ function Scene7({
   };
 
   // توليد موجات صوتية
-  const bars = Array.from({ length: 20 }, (_, i) => ({
+  const bars = Array.from({ length: 20 }, (_, ) => ({
     height: 10 + Math.random() * 30,
     delay: Math.random() * 0.5,
   }));
@@ -944,7 +944,7 @@ export default function App() {
     onVideoPause={pauseMainSong}
   />,
     <Scene9 onNext={goNext} herName={birthdayContent.herName} finalMessage={birthdayContent.finalMessage} />,
-    <Scene10 onNext={() => {}} myName={birthdayContent.myName} />,
+    <Scene10  myName={birthdayContent.myName} />,
   ];
 
   return (
